@@ -24,12 +24,14 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet("/vendors/{ID}")]
+        [HttpGet("/vendors/{ID}/orders")]
         public ActionResult Show(int ID)
         {
             Vendor vendor = Vendor.VendorList[ID-1];
             return View(vendor);
         }
+
+        
 
 
     }

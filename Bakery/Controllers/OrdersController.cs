@@ -4,10 +4,12 @@ namespace Bakery.Controllers
 {
     public class OrdersController : Controller
     {
-        [HttpGet("/orders")]
-        public ActionResult Index()
-        {
-            return View();
-        }
+        // [HttpGet("/vendors/{ID}/orders")]
+        // public ActionResult Index()
+        // {
+        //     return View();
+        // }
+
+        
     }
 }
