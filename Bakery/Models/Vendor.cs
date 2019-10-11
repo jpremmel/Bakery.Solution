@@ -16,6 +16,7 @@ namespace Bakery.Models
             Name = name;
             idAssigner++;
             ID = idAssigner;
+            VendorList.Add(this);
         }
 
 

@@ -11,7 +11,7 @@ namespace Bakery.Models
         public Order(string title)
         {
             Title = title;
-            Vendor.OrderList.Add(this);
+            // Vendor.OrderList.Add(this);
         }
 
     }

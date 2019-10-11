@@ -3,7 +3,7 @@ using Bakery.Models;
 
 namespace Bakery.Controllers
 {
-    public class BakeriesController : Controller
+    public class VendorsController : Controller
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
@@ -11,11 +11,17 @@ namespace Bakery.Controllers
             return View();
         }
 
-        [HttpPost("/vendors/new")]
+        [HttpGet("/vendors/new")]
         public ActionResult New(string name)
         {
-            Vendor vendor = new Vendor(name);
             return View();
+        }
+
+        [HttpPost("/vendors")]
+        public ActionResult Create(string name)
+        {
+            Vendor vendor = new Vendor(name);
+            return RedirectToAction("Index");
         }
 
 
