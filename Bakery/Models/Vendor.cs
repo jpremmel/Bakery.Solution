@@ -10,6 +10,13 @@ namespace Bakery.Models
         public int ID { get; }
         public static int idAssigner { get; set;}
 
-        
+        public Vendor(string name)
+        {
+            Name = name;
+            idAssigner++;
+            ID = idAssigner;
+        }
+
+
     }
 }
