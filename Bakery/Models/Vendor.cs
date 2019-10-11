@@ -19,6 +19,5 @@ namespace Bakery.Models
             VendorList.Add(this);
         }
 
-
     }
 }

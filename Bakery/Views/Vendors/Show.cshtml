@@ -1,4 +1,3 @@
-@using Bakery.Models;
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,12 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Your Vendors</h1>
-        @foreach(Vendor vendor in Vendor.VendorList)
-        {
-          <h3><a href="/vendors/@vendor.ID">@vendor.Name</a></h3>
-        }
-      <a href="/vendors/new"><button class="btn btn-warning">Add A Vendor</button></a>
+      <h1>@Model.Name</h1>
+      <!-- <a href="/vendors/new"><button class="btn btn-warning">Add A Vendor</button></a> -->
     </div>
   </body>
 </html>
