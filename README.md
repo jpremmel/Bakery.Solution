@@ -1,4 +1,4 @@
-# _Pierre's Bakery Management App
+# _Pierre's Bakery Management App_
 
 #### _A web page where the fictional bakery owner Pierre can keep track of his bakery's vendors, 11 Oct 2019_
 
