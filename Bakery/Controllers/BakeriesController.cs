@@ -5,12 +5,19 @@ namespace Bakery.Controllers
 {
     public class BakeriesController : Controller
     {
-        [HttpGet("/bakeries")]
+        [HttpGet("/vendors")]
         public ActionResult Index()
         {
             return View();
         }
 
-        
+        [HttpPost("/vendors/new")]
+        public ActionResult New(string name)
+        {
+            Vendor vendor = new Vendor(name);
+            return View();
+        }
+
+
     }
 }

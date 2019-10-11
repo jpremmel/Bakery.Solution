@@ -9,9 +9,11 @@
   <body>
     <div class="container">
       <h1>Your Vendors</h1>
-      
-      
-      <a href="/vendors/new"><button class="btn btn-warning">Add A Vendor</button></a>
+      <form action="/vendors" method="post">
+        <label for="name">Vendor Name:</label>
+        <input id="name" name="name" type="text" class="form-inline">
+        <button type="submit" class="btn btn-warning">Add Vendor</button>
+      </form>
     </div>
   </body>
 </html>

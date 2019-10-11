@@ -6,7 +6,8 @@ namespace Bakery.Models
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public static List<Order> OrderList = new List<Order> { };
+        public List<Order> OrderList = new List<Order> { };
+        public static List<Vendor> VendorList = new List<Vendor> { };
         public int ID { get; }
         public static int idAssigner { get; set;}
 
