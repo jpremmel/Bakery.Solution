@@ -13,9 +13,9 @@ namespace Bakery.Controllers
         }
 
         [HttpPost("/vendors/{id}")]
-        public ActionResult Create(string title, int vendorID)
+        public ActionResult Create(int vendorID, string title, string description, int price, string date)
         {
-            Order order = new Order(title);
+            Order order = new Order(title, description, price, date);
             Vendor.VendorList[vendorID-1].OrderList.Add(order);
             return RedirectToAction("Show", "Vendors");
         }

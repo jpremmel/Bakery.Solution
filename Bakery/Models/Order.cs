@@ -8,10 +8,12 @@ namespace Bakery.Models
         public int Price { get; set; }
         public string Date { get; set; }
 
-        public Order(string title)
+        public Order(string title, string description, int price, string date)
         {
             Title = title;
-            // Vendor.OrderList.Add(this);
+            Description = description;
+            Price = price;
+            Date = date;
         }
 
     }

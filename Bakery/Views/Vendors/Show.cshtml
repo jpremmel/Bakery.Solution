@@ -19,6 +19,9 @@
         foreach(Order order in @Model.OrderList)
         {
           <h3>@order.Title</h3>
+          <p><strong>Description: </strong>@order.Description</p>
+          <p><strong>Price: </strong>@order.Price</p>
+          <p><strong>Date: </strong>@order.Date</p>
         }
       }
       <a href="/vendors/@Model.ID/orders/new"><button class="btn btn-warning">Add An Order</button></a>
