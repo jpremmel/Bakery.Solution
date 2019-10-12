@@ -19,7 +19,7 @@ _This application allows a bakery owner to add vendors to a list and to keep tra
 
 ## Technologies Used
 
-_C#, .NET, CSS, Bootstrap, HTML_
+_C#, ASP.NET Core MVC, CSS, Bootstrap, HTML_
 
 ### License
 
