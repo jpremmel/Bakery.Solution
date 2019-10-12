@@ -18,10 +18,10 @@
       {
         foreach(Order order in @Model.OrderList)
         {
-          <h3>order.Title</h3>
+          <h3>@order.Title</h3>
         }
       }
-      <a href="/vendors/{ID}/orders/new"><button class="btn btn-warning">Add An Order</button></a>
+      <a href="/vendors/@Model.ID/orders/new"><button class="btn btn-warning">Add An Order</button></a>
     </div>
   </body>
 </html>

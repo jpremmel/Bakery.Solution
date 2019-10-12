@@ -24,7 +24,7 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet("/vendors/{ID}/orders")]
+        [HttpGet("/vendors/{ID}")]   
         public ActionResult Show(int ID)
         {
             Vendor vendor = Vendor.VendorList[ID-1];

@@ -1,0 +1,21 @@
+@using Bakery.Models;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Pierre's Bakery</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create New Order for @Model.Name</h1>
+      <form action="/vendors/@Model.ID" method="post">
+        <label for="title">Order Title:</label>
+        <input id="title" name="title" type="text" class="form-inline">
+        <input id='vendorID' name='vendorID' type='hidden' value='@Model.ID'>
+        <button type="submit" class="btn btn-warning">Add Order</button>
+      </form>
+    </div>
+  </body>
+</html>
