@@ -11,13 +11,13 @@ namespace Bakery.Models
         public int ID { get; }
         public static int idAssigner { get; set;}
 
-        public Vendor(string name)
+        public Vendor(string name, string description)
         {
             Name = name;
+            Description = description;
             idAssigner++;
             ID = idAssigner;
             VendorList.Add(this);
         }
-
     }
 }

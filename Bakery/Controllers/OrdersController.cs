@@ -19,7 +19,5 @@ namespace Bakery.Controllers
             Vendor.VendorList[vendorID-1].OrderList.Add(order);
             return RedirectToAction("Show", "Vendors");
         }
-
-
     }
 }

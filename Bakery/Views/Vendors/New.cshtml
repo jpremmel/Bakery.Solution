@@ -10,10 +10,13 @@
     <div class="container">
       <h1>Your Vendors</h1>
       <form action="/vendors" method="post">
-        <label for="name">Vendor Name:</label>
-        <input id="name" name="name" type="text" class="form-inline">
-        <button type="submit" class="btn btn-warning">Add Vendor</button>
+        <p><label for="name">Vendor Name:</label>
+        <input id="name" name="name" type="text" class="form-inline"></p>
+        <p><label for="description">Description:</label>
+        <input id="description" name="description" type="text" class="form-inline"></p>
+        <p><button type="submit" class="btn btn-warning">Add Vendor</button></p>
       </form>
+      <p><a href="/vendors"><button class="btn btn-warning">Back To Vendors</button></a></p>
     </div>
   </body>
 </html>

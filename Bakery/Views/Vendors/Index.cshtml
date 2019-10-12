@@ -12,9 +12,11 @@
       <h1>Your Vendors</h1>
         @foreach(Vendor vendor in Vendor.VendorList)
         {
-          <h3><a href="/vendors/@vendor.ID">@vendor.Name</a> (vendor ID: @vendor.ID)</h3>
+          <h3><a href="/vendors/@vendor.ID">@vendor.Name</a></h3>
+          <p><strong>Description: </strong>@vendor.Description</p>
         }
-      <a href="/vendors/new"><button class="btn btn-warning">Add A Vendor</button></a>
+      <p><a href="/vendors/new"><button class="btn btn-warning">Add A Vendor</button></a></p>
+      <p><a href="/"><button class="btn btn-warning">Back To Home</button></a></p>
     </div>
   </body>
 </html>
